@@ -1,0 +1,7 @@
+RegisterNetEvent('christmas:notify')
+AddEventHandler('christmas:notify', function(message)
+    AddTextEntry('notify', "<C>"..message)
+    BeginTextCommandThefeedPost('notify')
+    EndTextCommandThefeedPostMessagetext('CHAR_NOEL', 'CHAR_NOEL', false, 1, ChristmasConfig.messages["christmas_notif_title"], ChristmasConfig.messages["christmas_notif_subtitle"])
+    EndTextCommandThefeedPostTicker(false, false)
+end)
