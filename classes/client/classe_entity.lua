@@ -20,6 +20,9 @@ function christmasClientEntity:stopAnim()
     ClearPedTasks(PlayerPedId())
 end
 
+---color
+---@return void
+---@public
 function christmasClientEntity:color(name)
     DoScreenFadeOut(1000)
     Wait(1000)
